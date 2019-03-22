@@ -1,29 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>project1</title>
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Gentium+Basic" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <nav class="nav-container">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Superman</h1>
-    <img src="assets/images/250px-SupermanRoss.png" alt="superman">
+    <header>
+        <img src="assets/img/logo.png" height="100">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#port">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="hero">
+        <div>
+            <h1>Hello!</h1>
+            <p>Welcome to my website.</p>
+        </div>
+    </div>
+    <div id="port">
+        <h1>Featured Portfolio</h1>
+        <div class="container">
+            <div class="col c3">
+                <img src="assets/img/projectthumb1.jpg">
+                <h4>Project 1</h4>
+            </div>
+            <div class="col c3">
+                <img src="assets/img/projectthumb2.jpg">
+                <h4>Project 2</h4>
+            </div>
+            <div class="col c3">
+                <img src="assets/img/projectthumb3.jpg">
+                <h4>Project 3</h4>
+            </div>
+        </div>
+    </div>
+
+    <h1>Programming Skills</h1>
+    <div class="content">
+        <div class="slider-wrapper">
+            I can write
+            <div class="slider">
+                <div class="slider-text1">HTML</div>
+                <div class="slider-text2">CSS</div>
+                <div class="slider-text3">C++</div>
+            </div>
+        </div>
+    </div>
 
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nulla nihil quis eveniet enim a ut animi architecto impedit iste, odit laboriosam quaerat modi numquam ullam ipsa nostrum, consequatur aliquam.</p>
-
-
-
+    <footer>
+        <p>&copy; 2019. All rights reserved. </p>
+    </footer>
 </body>
 
 </html>

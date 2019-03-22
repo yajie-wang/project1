@@ -1,42 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>project1</title>
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Gentium+Basic" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .container{
+			max-width:100%;
+			height:calc(100vh - 200px);
+		}
+		
+		#map{
+			min-height:500px;
+		}
+	</style>
 </head>
 
 <body>
-    <nav class="nav-container">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Contact</h1>
-    <form>
-        <label>Name
-            <br>
-            <input type="text" placeholder="Your Name" name="name"></label>
-        <br>
-        <label>Email
-            <br>
-            <input type="text" placeholder="abc@gmail.com" name="email"></label>
-        <br>
-        <label>
-            Message
-            <br>
-            <textarea name="message" placeholder="......"></textarea>
-        </label>
-        <br>
-        <input type="submit" name="sb1" value="Email now">
+    <header>
+        <img src="assets/img/logo.png" height="100">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#port">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="col c2" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.066112522921!2d-74.0138758347781!3d40.716561079331406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1e7e56a86f%3A0x69339e9ddf4f987a!2sBorough+of+Manhattan+Community+College!5e0!3m2!1sen!2sus!4v1552056828617" width="100%" height="500" frameborder="0" style="border:0 height:500px;" allowfullscreen></iframe>
+        </div>
+        <div class="col c2 c4">
+            <h1>Contact Me</h1>
+            <form>
+                <br><br><br>
+                <label>Name<br>
+                    <input type="text" name="name">
+                </label>
+                <br><br>
+                <label>Email<br>
+                    <input type="email" name="eml">
+                </label>
+                <br><br>
+                <label>Message<br>
+                    <textarea name="msg"></textarea>
+                </label>
+                <br><br><br>
+                <input type="submit" value="Email Now" class="btn">
+            </form>
+        </div>
+    </div>
 
-    </form>
-
-
+    <footer>
+        <p>&copy; 2019. All rights reserved. </p>
+    </footer>
 </body>
 
 </html>
